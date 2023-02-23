@@ -1,0 +1,50 @@
+name: auth_bloc
+description: Flutter project with bloc and orientation detection.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ui
+  cupertino_icons: ^1.0.2
+  sizer: ^2.0.15
+
+  #util
+  flutter_bloc: ^8.1.2
+  flutter_native_splash: ^2.2.16
+  flutter_secure_storage: ^8.0.0
+  get_it: ^7.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.11.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/ic_launcher.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  color_dark: "#ffffff"
+  image: assets/icons/ic_logo.png
+  android_12:
+    color: "#ffffff"
+    color_dark: "#ffffff"
+    image: assets/icons/ic_logo.png
