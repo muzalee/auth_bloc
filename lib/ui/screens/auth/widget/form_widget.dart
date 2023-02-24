@@ -111,7 +111,6 @@ class _FormWidgetState extends State<FormWidget> {
           controller: _nameController,
           textInputAction: TextInputAction.next,
           maxLines: 1,
-          keyboardType: TextInputType.text,
           style: regularText(color: Colors.white),
           decoration: bottomBorderedTextField(
             borderColor: Colors.white,

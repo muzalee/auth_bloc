@@ -5,6 +5,7 @@ import 'package:auth_bloc/utils/styles/text.dart';
 import 'package:auth_bloc/utils/styles/textfield.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
 
@@ -94,6 +95,7 @@ class _CodeWidgetState extends State<CodeWidget> {
                     controller: _controllers[index],
                     focusNode: _focusNodes[index],
                     keyboardType: TextInputType.number,
+                    inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                     textAlign: TextAlign.center,
                     decoration: borderedTextField(hideError: true),
                     onChanged: (value) {

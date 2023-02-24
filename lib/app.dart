@@ -35,7 +35,6 @@ class MyApp extends StatelessWidget {
             ),
             home: BlocBuilder<AppBloc, AppState>(
               builder: (context, state) {
-                FlutterNativeSplash.remove();
                 if (state is Unauthenticated) {
                   FlutterNativeSplash.remove();
                   return const AuthScreen();
