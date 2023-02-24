@@ -2,7 +2,6 @@ import 'package:auth_bloc/bloc/forgot_password/forgot_password_bloc.dart';
 import 'package:auth_bloc/utils/styles/text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:sizer/sizer.dart';
 
 import 'widget/code_widget.dart';
 import 'widget/email_widget.dart';
@@ -64,30 +63,30 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       children: [
         CircleAvatar(
           backgroundColor: _bloc.state.pageIndex == 0 ? Colors.black : Colors.grey,
-          radius: 16.sp,
+          radius: 16,
           child: CircleAvatar(
             backgroundColor: Colors.white,
-            radius: 15.sp,
+            radius: 15,
             child: Text('1', style: smallText(color: _bloc.state.pageIndex == 0 ? Colors.black : Colors.grey)),
           ),
         ),
         const SizedBox(width: 10),
         CircleAvatar(
           backgroundColor: _bloc.state.pageIndex == 1 ? Colors.black : Colors.grey,
-          radius: 16.sp,
+          radius: 16,
           child: CircleAvatar(
             backgroundColor: Colors.white,
-            radius: 15.sp,
+            radius: 15,
             child: Text('2', style: smallText(color: _bloc.state.pageIndex == 1 ? Colors.black : Colors.grey)),
           ),
         ),
         const SizedBox(width: 10),
         CircleAvatar(
           backgroundColor: _bloc.state.pageIndex == 2 ? Colors.black : Colors.grey,
-          radius: 16.sp,
+          radius: 16,
           child: CircleAvatar(
             backgroundColor: Colors.white,
-            radius: 15.sp,
+            radius: 15,
             child: Text('3', style: smallText(color: _bloc.state.pageIndex == 2 ? Colors.black : Colors.grey)),
           ),
         ),

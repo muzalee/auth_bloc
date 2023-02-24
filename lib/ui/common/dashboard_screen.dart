@@ -1,7 +1,6 @@
 import 'package:auth_bloc/utils/const/color_const.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 
 import '../screens/home/home_screen.dart';
 import '../screens/profile/profile_screen.dart';
@@ -54,8 +53,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
         backgroundColor: Colors.white,
         selectedItemColor: Colors.grey,
         unselectedItemColor: Colors.grey.shade400,
-        selectedFontSize: 12.sp,
-        unselectedFontSize: 12.sp,
+        selectedFontSize: 12,
+        unselectedFontSize: 12,
         elevation: 10,
         items: _titles.asMap().map((index, value) => MapEntry(index,
           BottomNavigationBarItem(

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 
 TextStyle extraSmallText({Color? color, FontWeight? fontWeight, bool wrap = true}) {
   return TextStyle(
-    fontSize: 9.sp,
+    fontSize: 9,
     color: color,
     fontWeight: fontWeight,
     overflow: wrap ? null : TextOverflow.ellipsis,
@@ -12,7 +11,7 @@ TextStyle extraSmallText({Color? color, FontWeight? fontWeight, bool wrap = true
 
 TextStyle smallText({Color? color, FontWeight? fontWeight, bool wrap = true}) {
   return TextStyle(
-    fontSize: 11.sp,
+    fontSize: 11,
     color: color,
     fontWeight: fontWeight,
     overflow: wrap ? null : TextOverflow.ellipsis,
@@ -21,7 +20,7 @@ TextStyle smallText({Color? color, FontWeight? fontWeight, bool wrap = true}) {
 
 TextStyle regularText({Color? color, FontWeight? fontWeight, bool wrap = true}) {
   return TextStyle(
-    fontSize: 13.sp,
+    fontSize: 14,
     color: color,
     fontWeight: fontWeight,
     overflow: wrap ? null : TextOverflow.ellipsis,
@@ -30,7 +29,7 @@ TextStyle regularText({Color? color, FontWeight? fontWeight, bool wrap = true}) 
 
 TextStyle mediumText({Color? color, bool wrap = true}) {
   return TextStyle(
-    fontSize: 15.sp,
+    fontSize: 17,
     color: color,
     overflow: wrap ? null : TextOverflow.ellipsis,
   );
@@ -38,7 +37,7 @@ TextStyle mediumText({Color? color, bool wrap = true}) {
 
 TextStyle largeText({Color? color, bool wrap = true}) {
   return TextStyle(
-    fontSize: 18.sp,
+    fontSize: 20,
     color: color,
     overflow: wrap ? null : TextOverflow.ellipsis,
   );
@@ -46,7 +45,7 @@ TextStyle largeText({Color? color, bool wrap = true}) {
 
 TextStyle header1Text({Color? color, bool wrap = true}) {
   return TextStyle(
-    fontSize: 18.sp,
+    fontSize: 20,
     color: color,
     fontWeight: FontWeight.bold,
     overflow: wrap ? null : TextOverflow.ellipsis,
@@ -55,7 +54,7 @@ TextStyle header1Text({Color? color, bool wrap = true}) {
 
 TextStyle header2Text({Color? color, bool wrap = true}) {
   return TextStyle(
-    fontSize: 15.sp,
+    fontSize: 17,
     color: color,
     fontWeight: FontWeight.bold,
     overflow: wrap ? null : TextOverflow.ellipsis,

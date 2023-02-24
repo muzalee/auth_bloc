@@ -7,7 +7,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:sizer/sizer.dart';
 
 class CodeWidget extends StatefulWidget {
   const CodeWidget({super.key});
@@ -146,7 +145,7 @@ class _CodeWidgetState extends State<CodeWidget> {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(Icons.arrow_back, color: Colors.grey, size: 15.sp),
+            const Icon(Icons.arrow_back, color: Colors.grey, size: 15),
             const SizedBox(width: 5),
             Text('Back to login', style: smallText(color: Colors.black54)),
           ],

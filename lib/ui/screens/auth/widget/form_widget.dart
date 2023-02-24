@@ -6,7 +6,6 @@ import 'package:auth_bloc/utils/styles/text.dart';
 import 'package:auth_bloc/utils/styles/textfield.dart';
 import 'package:auth_bloc/utils/validator.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class FormWidget extends StatefulWidget {

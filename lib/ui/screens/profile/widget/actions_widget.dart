@@ -1,7 +1,6 @@
 import 'package:auth_bloc/utils/styles/text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 
 class ActionsWidget extends StatelessWidget {
   const ActionsWidget({super.key});
@@ -39,7 +38,7 @@ class ActionsWidget extends StatelessWidget {
   Widget _action(String label, IconData icon, Function()? onEvent) {
     return ListTile(
       title: Text(label, style: regularText()),
-      trailing: Icon(icon, size: 18.sp),
+      trailing: Icon(icon, size: 18),
     );
   }
 }

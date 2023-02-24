@@ -7,7 +7,6 @@ import 'package:auth_bloc/utils/validator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:sizer/sizer.dart';
 
 class EmailWidget extends StatefulWidget {
   const EmailWidget({super.key});
@@ -123,7 +122,7 @@ class _EmailWidgetState extends State<EmailWidget> {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(Icons.arrow_back, color: Colors.grey, size: 15.sp),
+            const Icon(Icons.arrow_back, color: Colors.grey, size: 15),
             const SizedBox(width: 5),
             Text('Back to login', style: smallText(color: Colors.black54)),
           ],
